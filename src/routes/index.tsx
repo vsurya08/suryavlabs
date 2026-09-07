@@ -28,24 +28,6 @@ const projects = [
     stat: "500+",
     statLabel: "enterprise tenants",
   },
-  {
-    number: "02",
-    label: "Independent Build · In Progress",
-    title: "Mapmypalate",
-    problem: "Food discovery is still generic, noisy, and disconnected from an individual’s taste and context.",
-    outcome: "Building a more personal way to map taste and turn everyday food discovery into confident decisions.",
-    stat: "0→1",
-    statLabel: "product build",
-  },
-  {
-    number: "03",
-    label: "Surya V Labs · In Progress",
-    title: "Next Enterprise AI System",
-    problem: "High-value enterprise workflows need AI systems that can reason, act, and earn trust in production.",
-    outcome: "A new agentic system is taking shape. Details coming soon.",
-    stat: "Now",
-    statLabel: "in development",
-  },
 ];
 
 const skills = ["0→1 Product Builder", "Enterprise Agents", "B2B SaaS", "LLM Evaluation", "RAG Systems", "Responsible AI", "Quote to Cash", "Spend Management", "Intelligent Automation"];
