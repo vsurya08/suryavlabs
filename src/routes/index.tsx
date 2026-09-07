@@ -141,7 +141,7 @@ function Portfolio() {
 
       <section id="writing" className="scroll-mt-20 bg-card py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:px-12">
-          <div className="lg:col-span-4"><SectionLabel number="03" label="Writing" /><h2 className="mt-8 font-display text-4xl font-bold">Ideas taking shape.</h2></div>
+          <div className="lg:col-span-4"><SectionLabel number="03" label="Writing" /><h2 className="mt-8 font-display text-4xl font-bold">My Perspectives</h2></div>
           <div className="divide-y divide-border border-y border-border lg:col-span-8">{writing.map(([number, title, description]) => <article key={number} className="group grid gap-4 py-8 sm:grid-cols-[3rem_1fr_1fr] sm:gap-7"><span className="font-display text-lg font-bold text-primary">{number}</span><h3 className="font-display text-xl font-bold leading-snug">{title}</h3><p className="text-sm leading-6 text-muted-foreground">{description} <span className="font-semibold text-foreground">Coming soon.</span></p></article>)}</div>
         </div>
       </section>
