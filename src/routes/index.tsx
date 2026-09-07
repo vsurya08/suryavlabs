@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDownRight, ArrowUpRight, Download, Linkedin, Mail, MapPin } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import headshotAsset from "@/assets/surya-headshot.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -74,7 +75,14 @@ function Portfolio() {
 
       <section id="about" className="scroll-mt-20 border-t border-border bg-card py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:gap-20 lg:px-12">
-          <div className="lg:col-span-4"><SectionLabel number="01" label="About" /><h2 className="mt-8 font-display text-4xl font-bold leading-tight">Enterprise depth.<br /><span className="text-primary">Builder’s mindset.</span></h2></div>
+          <div className="lg:col-span-4">
+            <SectionLabel number="01" label="About" />
+            <h2 className="mt-8 font-display text-4xl font-bold leading-tight">Enterprise depth.<br /><span className="text-primary">Builder’s mindset.</span></h2>
+            <figure className="mt-10">
+              <img src={headshotAsset.url} alt="Surya Vaidyanathan professional headshot" className="aspect-[4/5] w-full max-w-sm object-cover grayscale transition-all duration-500 hover:grayscale-0" />
+              <figcaption className="mt-3 text-xs font-semibold text-muted-foreground">Surya Vaidyanathan · Sammamish, WA</figcaption>
+            </figure>
+          </div>
           <div className="lg:col-span-8">
             <p className="max-w-3xl font-display text-2xl font-semibold leading-relaxed sm:text-3xl">For more than 16 years, I’ve built products where complex systems, high-stakes workflows, and emerging technology meet.</p>
             <div className="mt-12 grid gap-10 border-t border-border pt-10 md:grid-cols-2">
