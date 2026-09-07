@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDownRight, ArrowUpRight, Download, Linkedin, Mail, MapPin } from "lucide-react";
 
-import portrait from "@/assets/surya-editorial-portrait.jpg";
 import { Button } from "@/components/ui/button";
 
 export const Route = createFileRoute("/")({
@@ -55,32 +54,20 @@ function Portfolio() {
       </header>
 
       <section id="top" className="relative flex min-h-[94svh] items-center overflow-hidden pt-28 pb-20 sm:pt-32">
-        <div className="absolute inset-y-0 right-0 -z-10 w-[38%] bg-hero-panel max-lg:hidden" />
-        <div className="hero-enter mx-auto grid w-full max-w-7xl items-center gap-14 px-5 sm:px-8 lg:grid-cols-12 lg:px-12">
-          <div className="lg:col-span-7">
-            <p className="mb-7 flex items-center gap-3 text-xs font-bold uppercase text-primary"><span className="h-px w-10 bg-primary" />Principal PM · Agentic AI</p>
-            <h1 className="max-w-4xl font-display text-5xl font-bold leading-[1.02] sm:text-7xl lg:text-[5.6rem]">
-              Building AI systems <span className="text-primary">enterprises ship.</span>
-            </h1>
-            <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
-              I’m Surya Vaidyanathan, a product leader turning complex enterprise workflows into trustworthy, production-ready agentic AI.
-            </p>
-            <div className="mt-10 flex flex-wrap items-center gap-6">
-              <Button asChild size="lg" className="h-12 rounded-none px-7"><a href="#projects">View selected work <ArrowDownRight /></a></Button>
-              <a href="/surya-vaidyanathan-resume.pdf" download className="inline-flex items-center gap-2 border-b-2 border-border py-2 text-sm font-bold text-foreground transition-colors hover:border-primary">Download résumé <Download className="size-4" /></a>
-            </div>
-            <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 border-t border-border pt-6 text-xs font-semibold uppercase text-muted-foreground">
-              <span>16+ years in B2B SaaS</span><span>Microsoft · SAP Concur</span><span>Seattle, WA</span>
-            </div>
+        <div className="hero-enter mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12">
+          <p className="mb-7 flex items-center gap-3 text-xs font-bold uppercase text-primary"><span className="h-px w-10 bg-primary" />Principal PM · Agentic AI</p>
+          <h1 className="max-w-4xl font-display text-5xl font-bold leading-[1.02] sm:text-7xl lg:text-[5.6rem]">
+            Building AI systems <span className="text-primary">enterprises ship.</span>
+          </h1>
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-muted-foreground sm:text-xl">
+            I’m Surya Vaidyanathan, a product leader turning complex enterprise workflows into trustworthy, production-ready agentic AI.
+          </p>
+          <div className="mt-10 flex flex-wrap items-center gap-6">
+            <Button asChild size="lg" className="h-12 rounded-none px-7"><a href="#projects">View selected work <ArrowDownRight /></a></Button>
+            <a href="/surya-vaidyanathan-resume.pdf" download className="inline-flex items-center gap-2 border-b-2 border-border py-2 text-sm font-bold text-foreground transition-colors hover:border-primary">Download résumé <Download className="size-4" /></a>
           </div>
-          <div className="relative lg:col-span-5">
-            <div className="relative aspect-[4/5] overflow-hidden bg-muted shadow-editorial">
-              <img src={portrait} alt="Editorial portrait representing Surya Vaidyanathan" width={1024} height={1280} className="h-full w-full object-cover grayscale transition duration-700 hover:grayscale-0" />
-              <div className="absolute inset-x-0 bottom-0 bg-caption p-5 text-primary-foreground">
-                <p className="text-xs font-bold uppercase">Product leadership at enterprise scale</p>
-              </div>
-            </div>
-            <div className="absolute -bottom-5 -left-5 -z-10 h-28 w-28 border-[10px] border-primary/15" />
+          <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 border-t border-border pt-6 text-xs font-semibold uppercase text-muted-foreground">
+            <span>16+ years in B2B SaaS</span><span>Microsoft · SAP Concur</span><span>Seattle, WA</span>
           </div>
         </div>
       </section>
