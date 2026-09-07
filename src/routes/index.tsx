@@ -146,6 +146,32 @@ function Portfolio() {
         </div>
       </section>
 
+      <section id="labs" className="scroll-mt-20 border-t border-border py-24 sm:py-32">
+        <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:px-12">
+          <div className="lg:col-span-4">
+            <SectionLabel number="04" label="Labs" />
+            <h2 className="mt-8 font-display text-4xl font-bold">Personal Utility Agents</h2>
+          </div>
+          <div className="lg:col-span-8">
+            <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
+              A growing set of small, purposeful agents built to solve everyday problems — starting with taste, memory, and decision-making. Each one is designed around a single job and shaped by real use.
+            </p>
+            <div className="mt-10 grid gap-8 sm:grid-cols-2">
+              <article className="border-t border-border pt-6">
+                <h3 className="font-display text-xl font-bold">Mapmypalate</h3>
+                <p className="mt-3 text-sm leading-6 text-muted-foreground">A personal food discovery agent that learns your taste and context, then recommends places and dishes you will actually want to try.</p>
+                <span className="mt-4 inline-block text-xs font-bold uppercase text-muted-foreground">In progress</span>
+              </article>
+              <article className="border-t border-border pt-6">
+                <h3 className="font-display text-xl font-bold">More experiments</h3>
+                <p className="mt-3 text-sm leading-6 text-muted-foreground">Additional utility agents are in early exploration. Details will be shared as they reach a worth-demoing state.</p>
+                <span className="mt-4 inline-block text-xs font-bold uppercase text-muted-foreground">Coming soon</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer id="contact" className="scroll-mt-20 bg-footer py-24 text-resume-foreground sm:py-28">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
           <div className="grid gap-10 lg:grid-cols-12"><div className="lg:col-span-8"><p className="text-xs font-bold uppercase text-primary">Let’s connect</p><h2 className="mt-5 font-display text-4xl font-bold leading-tight sm:text-6xl">Building something that needs to work in the real world?</h2></div><div className="flex flex-col justify-end gap-5 lg:col-span-4"><a href="mailto:vsurya08@gmail.com" className="inline-flex items-center gap-3 text-sm text-resume-muted hover:text-resume-foreground"><Mail className="size-4 text-primary" />vsurya08@gmail.com</a><a href="https://linkedin.com/in/suryavaidyanathan/" target="_blank" rel="noreferrer" className="inline-flex items-center gap-3 text-sm text-resume-muted hover:text-resume-foreground"><Linkedin className="size-4 text-primary" />LinkedIn profile</a><span className="inline-flex items-center gap-3 text-sm text-resume-muted"><MapPin className="size-4 text-primary" />Sammamish · Seattle, WA</span></div></div>
