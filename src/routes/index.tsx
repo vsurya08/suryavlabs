@@ -63,7 +63,7 @@ function Portfolio() {
         <nav aria-label="Main navigation" className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
           <a href="#top" className="font-display text-lg font-bold text-foreground">Surya V<span className="text-primary">.</span></a>
           <div className="hidden items-center gap-8 md:flex">
-            {[["About", "#about"], ["Work", "#projects"], ["Writing", "#writing"]].map(([label, href]) => (
+            {[["About", "#about"], ["Work", "#projects"], ["Writing", "#writing"], ["Labs", "#labs"]].map(([label, href]) => (
               <a key={href} href={href} className="text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground">{label}</a>
             ))}
             <Button asChild size="sm" className="rounded-none px-5"><a href="#contact">Contact</a></Button>
@@ -143,6 +143,32 @@ function Portfolio() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:px-12">
           <div className="lg:col-span-4"><SectionLabel number="03" label="Writing" /><h2 className="mt-8 font-display text-4xl font-bold">My Perspectives</h2></div>
           <div className="divide-y divide-border border-y border-border lg:col-span-8">{writing.map(([number, title, description]) => <article key={number} className="group grid gap-4 py-8 sm:grid-cols-[3rem_1fr_1fr] sm:gap-7"><span className="font-display text-lg font-bold text-primary">{number}</span><h3 className="font-display text-xl font-bold leading-snug">{title}</h3><p className="text-sm leading-6 text-muted-foreground">{description} <span className="font-semibold text-foreground">Coming soon.</span></p></article>)}</div>
+        </div>
+      </section>
+
+      <section id="labs" className="scroll-mt-20 border-t border-border py-24 sm:py-32">
+        <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:px-12">
+          <div className="lg:col-span-4">
+            <SectionLabel number="04" label="Labs" />
+            <h2 className="mt-8 font-display text-4xl font-bold">Personal Utility Agents</h2>
+          </div>
+          <div className="lg:col-span-8">
+            <p className="max-w-3xl text-lg leading-8 text-muted-foreground">
+              A growing set of small, purposeful agents built to solve everyday problems — starting with taste, memory, and decision-making. Each one is designed around a single job and shaped by real use.
+            </p>
+            <div className="mt-10 grid gap-8 sm:grid-cols-2">
+              <article className="border-t border-border pt-6">
+                <h3 className="font-display text-xl font-bold">Mapmypalate</h3>
+                <p className="mt-3 text-sm leading-6 text-muted-foreground">A personal food discovery agent that learns your taste and context, then recommends places and dishes you will actually want to try.</p>
+                <span className="mt-4 inline-block text-xs font-bold uppercase text-muted-foreground">In progress</span>
+              </article>
+              <article className="border-t border-border pt-6">
+                <h3 className="font-display text-xl font-bold">More experiments</h3>
+                <p className="mt-3 text-sm leading-6 text-muted-foreground">Additional utility agents are in early exploration. Details will be shared as they reach a worth-demoing state.</p>
+                <span className="mt-4 inline-block text-xs font-bold uppercase text-muted-foreground">Coming soon</span>
+              </article>
+            </div>
+          </div>
         </div>
       </section>
 
