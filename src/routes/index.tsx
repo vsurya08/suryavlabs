@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDownRight, ArrowUpRight, Download, Linkedin, Mail, MapPin } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import headshotAsset from "@/assets/surya-headshot.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
