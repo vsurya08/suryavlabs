@@ -63,7 +63,7 @@ function Portfolio() {
         <nav aria-label="Main navigation" className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
           <a href="#top" className="font-display text-lg font-bold text-foreground">Surya V<span className="text-primary">.</span></a>
           <div className="hidden items-center gap-8 md:flex">
-            {[["About", "#about"], ["Work", "#projects"], ["Writing", "#writing"]].map(([label, href]) => (
+            {[["About", "#about"], ["Work", "#projects"], ["Writing", "#writing"], ["Labs", "#labs"]].map(([label, href]) => (
               <a key={href} href={href} className="text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground">{label}</a>
             ))}
             <Button asChild size="sm" className="rounded-none px-5"><a href="#contact">Contact</a></Button>
