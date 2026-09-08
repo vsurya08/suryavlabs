@@ -32,9 +32,9 @@ const projects = [
 
 const skills = ["0→1 Product Builder", "Enterprise Agents", "B2B SaaS", "LLM Evaluation", "RAG Systems", "Responsible AI", "Quote to Cash", "Spend Management", "Intelligent Automation"];
 
-const writing = [
-  ["01", "Vibe coding: The new era of product development", "How AI-native building changes the distance between product intent and working software."],
-  ["02", "AI as a personal OS", "A practical view of AI that coordinates context, decisions, and action across daily work."],
+const writing: [string, string, string, string?][] = [
+  ["01", "Vibe coding: The new era of product development", "How AI-native building changes the distance between product intent and working software.", "https://www.linkedin.com/pulse/vibe-coding-new-era-product-development-surya-vaidyanathan-cq2tc/"],
+  ["02", "AI isn't my assistant, it's my personal operating system", "A practical view of AI that coordinates context, decisions, and action across daily work.", "https://www.linkedin.com/pulse/ai-isnt-my-assistant-its-personal-operating-system-surya-vaidyanathan-tlfcc/"],
   ["03", "Building enterprise agents people trust", "Why evaluation, grounding, and responsible defaults matter more than a polished demo."],
 ];
 
