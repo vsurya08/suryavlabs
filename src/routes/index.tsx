@@ -32,9 +32,9 @@ const projects = [
 
 const skills = ["0→1 Product Builder", "Enterprise Agents", "B2B SaaS", "LLM Evaluation", "RAG Systems", "Responsible AI", "Quote to Cash", "Spend Management", "Intelligent Automation"];
 
-const writing = [
-  ["01", "Vibe coding: The new era of product development", "How AI-native building changes the distance between product intent and working software."],
-  ["02", "AI as a personal OS", "A practical view of AI that coordinates context, decisions, and action across daily work."],
+const writing: [string, string, string, string?][] = [
+  ["01", "Vibe coding: The new era of product development", "How AI-native building changes the distance between product intent and working software.", "https://www.linkedin.com/pulse/vibe-coding-new-era-product-development-surya-vaidyanathan-cq2tc/"],
+  ["02", "AI isn't my assistant, it's my personal operating system", "A practical view of AI that coordinates context, decisions, and action across daily work.", "https://www.linkedin.com/pulse/ai-isnt-my-assistant-its-personal-operating-system-surya-vaidyanathan-tlfcc/"],
   ["03", "Building enterprise agents people trust", "Why evaluation, grounding, and responsible defaults matter more than a polished demo."],
 ];
 
@@ -119,7 +119,7 @@ function Portfolio() {
       <section id="writing" className="scroll-mt-20 bg-card py-24 sm:py-32">
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:px-12">
           <div className="lg:col-span-4"><SectionLabel number="03" label="Writing" /><h2 className="mt-8 font-display text-4xl font-bold">My Perspectives</h2></div>
-          <div className="divide-y divide-border border-y border-border lg:col-span-8">{writing.map(([number, title, description]) => <article key={number} className="group grid gap-4 py-8 sm:grid-cols-[3rem_1fr_1fr] sm:gap-7"><span className="font-display text-lg font-bold text-primary">{number}</span><h3 className="font-display text-xl font-bold leading-snug">{title}</h3><p className="text-sm leading-6 text-muted-foreground">{description} <span className="font-semibold text-foreground">Coming soon.</span></p></article>)}</div>
+          <div className="divide-y divide-border border-y border-border lg:col-span-8">{writing.map(([number, title, description, url]) => <article key={number} className="group grid gap-4 py-8 sm:grid-cols-[3rem_1fr_1fr] sm:gap-7"><span className="font-display text-lg font-bold text-primary">{number}</span><h3 className="font-display text-xl font-bold leading-snug">{url ? <a href={url} target="_blank" rel="noreferrer" className="underline decoration-primary underline-offset-4 transition-colors hover:text-primary">{title}</a> : title}</h3><p className="text-sm leading-6 text-muted-foreground">{description} {url ? <a href={url} target="_blank" rel="noreferrer" className="font-semibold text-foreground underline decoration-primary underline-offset-4 transition-colors hover:text-primary">Read on LinkedIn →</a> : <span className="font-semibold text-foreground">Coming soon.</span>}</p></article>)}</div>
         </div>
       </section>
 
