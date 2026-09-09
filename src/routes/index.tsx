@@ -105,7 +105,7 @@ function Portfolio() {
                 <div className="md:col-span-1"><span className="font-display text-2xl font-bold text-primary">{project.number}</span></div>
                 <div className="md:col-span-4"><p className="text-xs font-bold uppercase text-muted-foreground">{project.label}</p><h3 className="mt-2 font-display text-2xl font-bold sm:text-3xl">{project.title}</h3></div>
                 <div className="md:col-span-4"><p className="text-sm leading-6 text-muted-foreground">{project.problem}</p><p className="mt-3 text-sm font-semibold leading-6 text-foreground">{project.outcome}</p></div>
-                <div className="flex items-end justify-between md:col-span-3 md:justify-end md:gap-8"><div className="md:text-right"><p className="font-display text-3xl font-bold">{project.stat}</p><p className="text-xs text-muted-foreground">{project.statLabel}</p></div><ArrowUpRight className="size-5 text-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></div>
+                <div className="flex items-end justify-between gap-6 md:col-span-3 md:justify-end"><div className="grid gap-4 md:text-right">{project.stats.map((s) => (<div key={s.stat}><p className="font-display text-3xl font-bold">{s.stat}</p><p className="text-xs text-muted-foreground">{s.statLabel}</p></div>))}</div><ArrowUpRight className="size-5 shrink-0 text-primary transition-transform group-hover:translate-x-1 group-hover:-translate-y-1" /></div>
               </article>
             ))}
           </div>
