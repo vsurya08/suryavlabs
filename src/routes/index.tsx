@@ -23,10 +23,10 @@ const projects = [
     number: "01",
     label: "Microsoft Dynamics 365",
     title: "T&E Approvals Agent",
-    problem: "Enterprise approvals were slowed by fragmented policies, context switching, and repetitive review work.",
-    outcome: "Microsoft’s first CRM production agentic AI—deployed to 500+ enterprise tenants and featured in Satya Nadella’s keynote.",
-    stat: "500+",
-    statLabel: "enterprise tenants",
+    problem: "Enterprise approvals were slowed by fragmented policies, manual reviews, context switching, and costly exceptions that scaled with headcount.",
+    outcome: "Microsoft's first production agentic AI in Dynamics 365 -deployed to 500+ enterprise tenants, delivering $3M in annual customer savings and 19.5k hours of productivity gains per year for project managers,featured in Satya Nadella’s keynote.",
+    stat: "$3M",
+    statLabel: "customer savings",
   },
 ];
 
