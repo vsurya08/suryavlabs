@@ -77,20 +77,20 @@ function Portfolio() {
       </section>
 
       <section id="about" className="scroll-mt-20 border-t border-border bg-card py-24 sm:py-32">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:gap-20 lg:px-12">
-          <div className="lg:col-span-4">
-            <SectionLabel number="01" label="About" />
-            <h2 className="mt-8 font-display text-4xl font-bold leading-tight">Enterprise depth.<br /><span className="text-primary">Builder's mindset.</span></h2>
-            <figure className="mt-10">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
+          <SectionLabel number="01" label="About" />
+          <h2 className="mt-8 font-display text-4xl font-bold leading-tight">Enterprise depth.<br /><span className="text-primary">Builder's mindset.</span></h2>
+          <div className="mt-10 grid gap-12 lg:grid-cols-12 lg:gap-20">
+            <figure className="lg:col-span-4">
               <img src={headshotAsset.url} alt="Surya Vaidyanathan professional headshot" className="aspect-[4/5] w-full max-w-sm object-cover grayscale transition-all duration-500 hover:grayscale-0" />
             </figure>
-          </div>
-          <div className="lg:col-span-8">
-            <div className="max-w-2xl text-sm leading-7 text-muted-foreground lg:pt-24">
-              <p>Sixteen years in enterprise software. Long enough to have sat in meetings where "ship it" meant "schedule a readout to align on whether to schedule the readout" — and somehow kept a straight face.</p>
-              <p className="mt-4">I've shipped products at Microsoft and SAP Concur — where "moving fast" meant clearing four layers of sign-off before touching production. Which makes it slightly ironic that I ended up building Microsoft's first production agentic AI: a system that now autonomously handles T&E approvals for enterprise customers.</p>
-              <p className="mt-4">Build fast, fail fast was a mantra long before the AI era — but I'm truly living it now at <a href="https://suryavlabs.com" className="font-semibold text-foreground underline decoration-primary underline-offset-4">suryavlabs.com</a>, my personal lab where approval cycles don't exist and the only blocker is whether I have enough Lovable credits.</p>
-              <p className="mt-4">I write about AI and my experiments with it on weekends, and have fully outsourced our family's meal planning, travel itineraries, and packing decisions to ChatGPT.</p>
+            <div className="lg:col-span-8">
+              <div className="max-w-2xl text-sm leading-7 text-muted-foreground">
+                <p>Sixteen years in enterprise software. Long enough to have sat in meetings where "ship it" meant "schedule a readout to align on whether to schedule the readout" — and somehow kept a straight face.</p>
+                <p className="mt-4">I've shipped products at Microsoft and SAP Concur — where "moving fast" meant clearing four layers of sign-off before touching production. Which makes it slightly ironic that I ended up building Microsoft's first production agentic AI: a system that now autonomously handles T&E approvals for enterprise customers.</p>
+                <p className="mt-4">Build fast, fail fast was a mantra long before the AI era — but I'm truly living it now at <a href="https://suryavlabs.com" className="font-semibold text-foreground underline decoration-primary underline-offset-4">suryavlabs.com</a>, my personal lab where approval cycles don't exist and the only blocker is whether I have enough Lovable credits.</p>
+                <p className="mt-4">I write about AI and my experiments with it on weekends, and have fully outsourced our family's meal planning, travel itineraries, and packing decisions to ChatGPT.</p>
+              </div>
             </div>
           </div>
         </div>
