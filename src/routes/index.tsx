@@ -80,18 +80,19 @@ function Portfolio() {
         <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-12 lg:gap-20 lg:px-12">
           <div className="lg:col-span-4">
             <SectionLabel number="01" label="About" />
-            <h2 className="mt-8 font-display text-4xl font-bold leading-tight">Enterprise depth.<br /><span className="text-primary">Builder’s mindset.</span></h2>
+            <h2 className="mt-8 font-display text-4xl font-bold leading-tight">Enterprise depth.<br /><span className="text-primary">Builder's mindset.</span></h2>
             <figure className="mt-10">
               <img src={headshotAsset.url} alt="Surya Vaidyanathan professional headshot" className="aspect-[4/5] w-full max-w-sm object-cover grayscale transition-all duration-500 hover:grayscale-0" />
-              <figcaption className="mt-3 text-xs font-semibold text-muted-foreground">Surya Vaidyanathan · Sammamish, WA</figcaption>
             </figure>
+            <div className="mt-6 max-w-sm text-sm leading-7 text-muted-foreground">
+              <p>Sixteen years in enterprise software. Long enough to have sat in meetings where "ship it" meant "schedule a readout to align on whether to schedule the readout" — and somehow kept a straight face.</p>
+              <p className="mt-4">I've shipped products at Microsoft and SAP Concur — where "moving fast" meant clearing four layers of sign-off before touching production. Which makes it slightly ironic that I ended up building Microsoft's first production agentic AI: a system that now autonomously handles T&E approvals for enterprise customers.</p>
+              <p className="mt-4">Build fast, fail fast was a mantra long before the AI era — but I'm truly living it now at <a href="https://suryavlabs.com" className="font-semibold text-foreground underline decoration-primary underline-offset-4">suryavlabs.com</a>, my personal lab where approval cycles don't exist and the only blocker is whether I have enough Lovable credits.</p>
+              <p className="mt-4">I write about AI and my experiments with it on weekends, and have fully outsourced our family's meal planning, travel itineraries, and packing decisions to ChatGPT.</p>
+            </div>
           </div>
           <div className="lg:col-span-8">
-            <p className="max-w-3xl font-display text-2xl font-semibold leading-relaxed sm:text-3xl">For more than 16 years, I’ve built products where complex systems, high-stakes workflows, and emerging technology meet.</p>
-            <div className="mt-12 grid gap-10 border-t border-border pt-10 md:grid-cols-2">
-              <p className="leading-7 text-muted-foreground">My path spans SAP Concur and Microsoft Dynamics 365. I led the T&E Approvals Agent through grounding, evaluation, safety, and enterprise deployment—work that moved agentic AI from demo to daily operation.</p>
-              <p className="leading-7 text-muted-foreground">The system became Microsoft’s first production agentic AI for CRM, reached 500+ enterprise tenants, and was featured in Satya Nadella’s keynote. Today I’m building at <a href="https://suryavlabs.com" className="font-semibold text-foreground underline decoration-primary underline-offset-4">suryavlabs.com</a> from Sammamish, Washington.</p>
-            </div>
+            <p className="max-w-3xl font-display text-2xl font-semibold leading-relaxed sm:text-3xl">For more than 16 years, I've built products where complex systems, high-stakes workflows, and emerging technology meet.</p>
           </div>
         </div>
       </section>
