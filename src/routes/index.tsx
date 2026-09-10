@@ -88,7 +88,7 @@ function Portfolio() {
               <div className="max-w-2xl text-sm leading-7 text-muted-foreground">
                 <p>Sixteen years in enterprise software. Long enough to have sat in meetings where "ship it" meant "schedule a readout to align on whether to schedule the readout" — and somehow kept a straight face.</p>
                 <p className="mt-4">I've shipped products at Microsoft and SAP Concur — where "moving fast" meant clearing four layers of sign-off before touching production. Which makes it slightly ironic that I ended up building Microsoft's first production agentic AI: a system that now autonomously handles T&E approvals for enterprise customers.</p>
-                <p className="mt-4">Build fast, fail fast was a mantra long before the AI era — but I'm truly living it now at <a href="https://suryavlabs.com" className="font-semibold text-foreground underline decoration-primary underline-offset-4">suryavlabs.com</a>, my personal lab where approval cycles don't exist and the only blocker is whether I have enough Lovable credits.</p>
+                <p className="mt-4">Build fast, fail fast was a mantra long before the AI era — but I'm truly living it now at <a href="https://suryavlabs.com" className="font-semibold text-foreground underline decoration-primary underline-offset-4">suryavlabs</a>, my personal lab where approval cycles don't exist and the only blocker is whether I have enough Lovable credits.</p>
                 <p className="mt-4">I write about AI and my experiments with it on weekends, and have fully outsourced our family's meal planning, travel itineraries, and packing decisions to ChatGPT.</p>
               </div>
             </div>
