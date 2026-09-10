@@ -96,7 +96,7 @@ function Portfolio() {
 
       <section id="projects" className="scroll-mt-20 py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-12">
-          <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end"><div><SectionLabel number="02" label="Selected Work" /><h2 className="mt-8 font-display text-4xl font-bold sm:text-6xl">Shipped to Production</h2></div></div>
+          <div className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end"><div><SectionLabel number="02" label="Selected Work" /><h2 className="mt-8 font-display text-4xl font-bold sm:text-6xl">Shipped to Production</h2><p className="mt-5 max-w-3xl font-display text-2xl font-semibold leading-relaxed sm:text-3xl">For more than 16 years, I've built products where complex systems, high-stakes workflows, and emerging technology meet.</p></div></div>
           <div className="mt-14 border-t border-border">
             {projects.map((project, index) => (
               <article key={project.number} className="project-row group grid gap-6 border-b border-border py-9 md:grid-cols-12 md:items-center">
