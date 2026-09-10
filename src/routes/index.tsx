@@ -84,7 +84,9 @@ function Portfolio() {
             <figure className="mt-10">
               <img src={headshotAsset.url} alt="Surya Vaidyanathan professional headshot" className="aspect-[4/5] w-full max-w-sm object-cover grayscale transition-all duration-500 hover:grayscale-0" />
             </figure>
-            <div className="mt-6 max-w-sm text-sm leading-7 text-muted-foreground">
+          </div>
+          <div className="lg:col-span-8">
+            <div className="max-w-2xl text-sm leading-7 text-muted-foreground lg:pt-24">
               <p>Sixteen years in enterprise software. Long enough to have sat in meetings where "ship it" meant "schedule a readout to align on whether to schedule the readout" — and somehow kept a straight face.</p>
               <p className="mt-4">I've shipped products at Microsoft and SAP Concur — where "moving fast" meant clearing four layers of sign-off before touching production. Which makes it slightly ironic that I ended up building Microsoft's first production agentic AI: a system that now autonomously handles T&E approvals for enterprise customers.</p>
               <p className="mt-4">Build fast, fail fast was a mantra long before the AI era — but I'm truly living it now at <a href="https://suryavlabs.com" className="font-semibold text-foreground underline decoration-primary underline-offset-4">suryavlabs.com</a>, my personal lab where approval cycles don't exist and the only blocker is whether I have enough Lovable credits.</p>
