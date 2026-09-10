@@ -91,9 +91,6 @@ function Portfolio() {
               <p className="mt-4">I write about AI and my experiments with it on weekends, and have fully outsourced our family's meal planning, travel itineraries, and packing decisions to ChatGPT.</p>
             </div>
           </div>
-          <div className="lg:col-span-8">
-            <p className="max-w-3xl font-display text-2xl font-semibold leading-relaxed sm:text-3xl">For more than 16 years, I've built products where complex systems, high-stakes workflows, and emerging technology meet.</p>
-          </div>
         </div>
       </section>
 
