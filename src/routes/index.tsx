@@ -46,7 +46,7 @@ function Portfolio() {
     <main className="min-h-screen overflow-x-hidden bg-background text-foreground">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/95 backdrop-blur-md">
         <nav aria-label="Main navigation" className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
-          <a href="#top" className="font-display text-lg font-bold text-foreground">Surya V<span className="text-primary">.</span></a>
+          <a href="#top" className="font-display text-lg font-bold text-foreground">Surya Vaidyanathan</a>
           <div className="hidden items-center gap-8 md:flex">
             {[["About", "#about"], ["Work", "#projects"], ["Writing", "#writing"], ["Labs", "#labs"]].map(([label, href]) => (
               <a key={href} href={href} className="text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground">{label}</a>
